@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopFiv3 - Top 5 Ranked, Top 3 That Matter</title>
+    <meta name="description" content="Expert product rankings and reviews. We break down the best products in every category, then spotlight the top 3 worth buying. Top 5 ranked, top 3 that matter.">
+    <meta name="keywords" content="product reviews, rankings, top 5, best products, buying guides, tech reviews, home products">
+    
+    <!-- Load Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f5f5f5;
+        color: #222;
+      }
+
+      .header-hero {
+        background: url('/images/banners/topfiv3banner.png') center center/cover no-repeat;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+      }
+
+      .header-hero::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 0;
+      }
+
+      .header-hero h1,
+      .header-hero .tagline,
+      .header-hero .sub {
+        position: relative;
+        z-index: 1;
+      }
+
+      .header-hero h1 {
+        font-size: 4.5rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        color: #fff;
+        text-shadow: 2px 2px 12px rgba(0,0,0,0.6), 0 0 6px rgba(0,0,0,0.3);
+        margin: 0 0 0.5rem;
+      }
+
+      .header-hero .tagline {
+        font-size: 1.8rem;
+        color: #ffe600;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+        margin-bottom: 0.5rem;
+      }
+
+      .header-hero .sub {
+        font-size: 1.1rem;
+        max-width: 640px;
+        margin: 0 auto;
+        color: #fefefe;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      }
+
+      .section {
+        padding: 3rem 1.5rem;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      .section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+        justify-items: center;
+        margin-top: 1rem;
+      }
+
+      .tile {
+        background: white;
+        padding: 0;
+        border-radius: 10px;
+        text-align: center;
+        color: #000;
+        border: 1px solid #ddd;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: block;
+      }
+
+      .tile img {
+        height: 220px;
+        display: block;
+        margin: 0 auto;
+        padding: 6px;
+        box-sizing: border-box;
+        transition: transform 0.2s ease;
+        width: auto;
+      }
+
+      .tile:hover img {
+        transform: scale(1.05);
+      }
+
+      .latest-feed {
+        margin-top: 2rem;
+      }
+
+      .latest-feed a {
+        display: block;
+        background: white;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        text-decoration: none;
+        color: #000;
+        transition: all 0.3s ease;
+      }
+
+      .latest-feed a:hover {
+        background: #000;
+        color: white;
+        border-color: #000;
+      }
+
+      .latest-feed h3 {
+        margin: 0 0 0.5rem;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 1.5rem;
+        background: #eee;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+      }
+    </style>
+</head>
+<body>
+
+<div class="header-hero">
+  <h1>TopFiv3</h1>
+  <div class="tagline">Top 5 Ranked, Top 3 That Matter</div>
+  <div class="sub">We break down the best products in every category — then spotlight the top 3 worth buying.</div>
+</div>
+
+<div class="section">
+  <h2>Explore Categories</h2>
+  <div class="category-grid">
+    <a href="/tech-electronics.html" class="tile">
+      <img src="/images/categories/tech.png" alt="Tech & Electronics">
+    </a>
+    <a href="/home-kitchen.html" class="tile">
+      <img src="/images/categories/home.png" alt="Home & Kitchen">
+    </a>
+    <a href="/outdoors-travel.html" class="tile">
+      <img src="/images/categories/outdoors.png" alt="Outdoors & Travel">
+    </a>
+    <a href="/health-fitness.html" class="tile">
+      <img src="/images/categories/health.png" alt="Health & Fitness">
+    </a>
+    <a href="/baby-parenting.html" class="tile">
+      <img src="/images/categories/baby.png" alt="Baby & Parenting">
+    </a>
+    <a href="/style-grooming.html" class="tile">
+      <img src="/images/categories/style.png" alt="Style & Grooming">
+    </a>
+    <a href="/diy-tools.html" class="tile">
+      <img src="/images/categories/diy.png" alt="DIY & Tools">
+    </a>
+    <a href="/misc-smart-buys.html" class="tile">
+      <img src="/images/categories/misc.png" alt="Misc & Smart Buys">
+    </a>
+  </div>
+</div>
+
+<div class="section latest-feed">
+  <h2>Latest Rankings</h2>
+
+  <!-- Ranking 1 -->
+  <a href="/reviews/tech/wireless-headphones-2025.html" class="ranking-preview">
+    <h3>Top 5 Wireless Headphones of 2025</h3>
+    <p>We tested and ranked the best wireless headphones of the year — including over-ear powerhouses and ultra-portable earbuds. Only 3 earned spotlight status.</p>
+  </a>
+
+  <!-- Ranking 2  --> 
+  <a href="/reviews/home/air-fryers-2025.html" class="ranking-preview">
+    <h3>Top 5 Air Fryers of 2025</h3>
+    <p>From crispy fries to whole roasted chickens, these air fryers ranked high in speed, consistency, and simplicity. See which 3 soared to the top.</p>
+  </a>
+
+  <!-- Ranking 3 (Example Placeholder) -->
+  <a href="/reviews/home/portable-blenders-2025.html" class="ranking-preview">
+    <h3>Top 5 Portable Blenders of 2025</h3>
+    <p>Blend on-the-go with the latest USB-C juicers. We picked the top options for gym, travel, and desk smoothies — and ditched the duds.</p>
+  </a>
+</div>
+
+<div class="footer">
+  &copy; 2025 TopFiv3.com — This site uses affiliate links that may earn us a commission.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+{
+  "deployment_summary": {
+    "total_pages": 1,
+    "successful_pages": 1,
+    "generated_at": "2025-08-31T07:34:21.015760",
+    "github_ready": true
+  },
+  "generated_pages": [
+    {
+      "category": "wireless headphones",
+      "file_path": "C:\\Users\\Brent\\topfiv3_github\\reviews\\tech\\wireless_headphones.html",
+      "products_count": 5
+    }
+  ],
+  "required_images": {
+    "total_images": 5,
+    "images": [
+      {
+        "product_name": "Sony WH-1000XM5 Wireless Headphones",
+        "brand": "Sony",
+        "filename": "sony_wh_1000xm5_wireless_headphones.jpg",
+        "path": "images/products/sony_wh_1000xm5_wireless_headphones.jpg",
+        "specs": {
+          "width": 300,
+          "height": 250,
+          "format": "jpg",
+          "quality": 85
+        },
+        "alt_text": "Sony WH-1000XM5 Wireless Headphones",
+        "amazon_url": null
+      },
+      {
+        "product_name": "Bose QuietComfort 45 Headphones",
+        "brand": "Bose",
+        "filename": "bose_quietcomfort_45_headphones.jpg",
+        "path": "images/products/bose_quietcomfort_45_headphones.jpg",
+        "specs": {
+          "width": 300,
+          "height": 250,
+          "format": "jpg",
+          "quality": 85
+        },
+        "alt_text": "Bose QuietComfort 45 Headphones",
+        "amazon_url": null
+      },
+      {
+        "product_name": "Apple AirPods Max",
+        "brand": "Apple",
+        "filename": "apple_airpods_max.jpg",
+        "path": "images/products/apple_airpods_max.jpg",
+        "specs": {
+          "width": 300,
+          "height": 250,
+          "format": "jpg",
+          "quality": 85
+        },
+        "alt_text": "Apple AirPods Max",
+        "amazon_url": null
+      },
+      {
+        "product_name": "Sennheiser Momentum 4 Wireless",
+        "brand": "Sennheiser",
+        "filename": "sennheiser_momentum_4_wireless.jpg",
+        "path": "images/products/sennheiser_momentum_4_wireless.jpg",
+        "specs": {
+          "width": 300,
+          "height": 250,
+          "format": "jpg",
+          "quality": 85
+        },
+        "alt_text": "Sennheiser Momentum 4 Wireless",
+        "amazon_url": null
+      },
+      {
+        "product_name": "Jabra Elite 85h",
+        "brand": "Jabra",
+        "filename": "jabra_elite_85h.jpg",
+        "path": "images/products/jabra_elite_85h.jpg",
+        "specs": {
+          "width": 300,
+          "height": 250,
+          "format": "jpg",
+          "quality": 85
+        },
+        "alt_text": "Jabra Elite 85h",
+        "amazon_url": null
+      }
+    ]
+  },
+  "affiliate_products": {
+    "total_products": 5,
+    "products_needing_links": [
+      {
+        "name": "Sony WH-1000XM5 Wireless Headphones",
+        "brand": "Sony",
+        "category": "wireless headphones",
+        "current_url": null,
+        "is_top_3": true
+      },
+      {
+        "name": "Bose QuietComfort 45 Headphones",
+        "brand": "Bose",
+        "category": "wireless headphones",
+        "current_url": null,
+        "is_top_3": true
+      },
+      {
+        "name": "Apple AirPods Max",
+        "brand": "Apple",
+        "category": "wireless headphones",
+        "current_url": null,
+        "is_top_3": true
+      },
+      {
+        "name": "Sennheiser Momentum 4 Wireless",
+        "brand": "Sennheiser",
+        "category": "wireless headphones",
+        "current_url": null,
+        "is_top_3": false
+      },
+      {
+        "name": "Jabra Elite 85h",
+        "brand": "Jabra",
+        "category": "wireless headphones",
+        "current_url": null,
+        "is_top_3": false
+      }
+    ]
+  }
+}

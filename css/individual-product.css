@@ -1,0 +1,300 @@
+/* Additional styles for individual product pages */
+
+.product-summary {
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.summary-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.summary-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.summary-verdict {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    border-left: 4px solid #ffd700;
+}
+
+.detailed-review {
+    padding: 3rem 0;
+}
+
+.review-content {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.review-content h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.review-content p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.detailed-features {
+    margin: 2rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.feature-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.feature-category h4 {
+    color: #2563eb;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.feature-category ul {
+    list-style: none;
+}
+
+.feature-category li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f3f4f6;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.feature-category li:before {
+    content: "→";
+    color: #2563eb;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.feature-category li:last-child {
+    border-bottom: none;
+}
+
+.extended-pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.pros-section, .cons-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.pros-section h3 {
+    color: #10b981;
+    margin-bottom: 1rem;
+}
+
+.cons-section h3 {
+    color: #ef4444;
+    margin-bottom: 1rem;
+}
+
+.pros-section ul, .cons-section ul {
+    list-style: none;
+}
+
+.pros-section li, .cons-section li {
+    padding: 0.5rem 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.buyer-guide {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.buyer-guide h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.buyer-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.buyer-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.buyer-category h4 {
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.buyer-category ul {
+    list-style: none;
+}
+
+.buyer-category li {
+    padding: 0.3rem 0;
+    color: #666;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.buyer-category li:before {
+    content: "✓";
+    color: #10b981;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.related-products {
+    padding: 3rem 0;
+    background: #f8f9fa;
+}
+
+.related-products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.related-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.related-item:hover {
+    transform: translateY(-2px);
+}
+
+.related-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.related-item h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.related-item p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.related-item .rating {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.view-review-btn {
+    background: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.view-review-btn:hover {
+    background: #1d4ed8;
+}
+
+.back-to-category {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.category-back-btn {
+    background: #f3f4f6;
+    color: #333;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.category-back-btn:hover {
+    background: #e5e7eb;
+}
+
+/* Responsive Design for Individual Pages */
+@media (max-width: 768px) {
+    .summary-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .extended-pros-cons {
+        grid-template-columns: 1fr;
+    }
+    
+    .buyer-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
