@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health & Fitness - Top Ranked Products | TopFiv3</title>
-    <meta name="description" content="Top 5 health and fitness products ranked by experts. From home gym equipment to wellness wearables, discover the top 3 that matter most for your fitness goals.">
+    <title>Baby & Parenting - Top Ranked Products | TopFiv3</title>
+    <meta name="description" content="Top 5 baby and parenting products ranked by experts. From strollers to baby monitors, discover the top 3 that matter most for your little ones.">
     
     <!-- Load Poppins font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
@@ -13,12 +13,12 @@
       body {
         font-family: 'Segoe UI', Tahoma, sans-serif;
         color: #222;
-        background: #f0fdf4;
+        background: #fef7ff;
         margin: 0;
       }
 
-      .health-hero {
-        background: url('images/fitnessbanner.png') center center/cover no-repeat;
+      .baby-hero {
+        background: url('images/babybanner.png') center center/cover no-repeat;
         height: 400px;
         display: flex;
         align-items: center;
@@ -27,31 +27,31 @@
         position: relative;
       }
 
-      .health-hero h1 {
-        font-size: 5rem;
+      .baby-hero h1 {
+        font-size: 4.8rem;
         font-family: 'Poppins', sans-serif;
         font-weight: 800;
         color: #ffffff;
         text-shadow:
-          2px 2px 12px rgba(0, 0, 0, 0.75),
-          0 0 6px rgba(0, 0, 0, 0.3);
+          2px 2px 10px rgba(0, 0, 0, 0.5),
+          0 0 6px rgba(0, 0, 0, 0.2);
         margin: 0;
-        z-index: 1;
       }
 
-      .health-description {
+      .divider {
+        height: 6px;
+        background: linear-gradient(to right, #ec4899, #f9a8d4);
+        margin-top: -5px;
+      }
+
+      .baby-description {
         text-align: center;
         max-width: 900px;
         margin: 2.5rem auto 2rem;
         font-size: 1.4rem;
         line-height: 1.7;
         color: #333;
-      }
-
-      .divider {
-        height: 6px;
-        background: linear-gradient(to right, #60a5fa, #c084fc);
-        margin-top: -5px;
+        padding: 0 1.5rem;
       }
 
       .section {
@@ -79,12 +79,6 @@
         box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         display: flex;
         flex-direction: column;
-      }
-
-      .teaser-block img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
       }
 
       .teaser-content {
@@ -118,14 +112,8 @@
       }
 
       .teaser-link:hover {
-        background-color: #10b981;
+        background-color: #ec4899;
         color: #fff;
-      }
-
-      .teaser-link.coming-soon {
-        background-color: #9ca3af;
-        opacity: 0.6;
-        pointer-events: none;
       }
 
       .ad-banner {
@@ -143,27 +131,27 @@
 </head>
 <body>
 
-<div class="health-hero">
-  <h1>Health & Fitness</h1>
+<div class="baby-hero">
+  <h1>Baby & Parenting</h1>
 </div>
 
 <div class="divider"></div>
 
-<div class="health-description">
-  From home gym gear and smart scales to wellness wearables and recovery tools — we review and rank the top products to keep your body strong and mind sharp. Top 5 tested. Top 3 spotlighted.
+<div class="baby-description">
+  From strollers and car seats to baby monitors and feeding essentials — we rank the top products to keep your little ones safe, happy, and thriving. Top 5 tested. Top 3 trusted.
 </div>
 
 <div class="section">
   <div class="teaser-grid">
     <!-- Coming Soon Placeholder -->
     <div class="teaser-block" style="opacity: 0.6;">
-      <div style="background: linear-gradient(135deg, #60a5fa, #c084fc); height: 220px; display: flex; align-items: center; justify-content: center;">
+      <div style="background: linear-gradient(135deg, #ec4899, #f9a8d4); height: 220px; display: flex; align-items: center; justify-content: center;">
         <span style="color: white; font-size: 1.5rem; font-weight: 600;">Coming Soon</span>
       </div>
       <div class="teaser-content">
-        <div class="teaser-title">Health & Fitness Rankings</div>
+        <div class="teaser-title">Baby & Parenting Rankings</div>
         <div class="teaser-desc">
-          We're testing and ranking the best health and fitness products. Check back soon for home gym equipment, wellness wearables, and fitness gear reviews.
+          We're testing and ranking the best baby and parenting products. Check back soon for strollers, car seats, baby monitors, and parenting essentials reviews.
         </div>
         <span class="teaser-link" style="background: #ccc; cursor: not-allowed;">Coming Soon</span>
       </div>
@@ -172,7 +160,7 @@
 
   <div class="ad-banner">
     <a href="https://sponsor.com">
-      <img src="https://via.placeholder.com/800x150.png?text=Health+%26+Wellness+Ad" alt="Sponsor Ad">
+      <img src="https://via.placeholder.com/800x150.png?text=Baby+%26+Parenting+Ad" alt="Baby & Parenting Ad">
     </a>
   </div>
 </div>
