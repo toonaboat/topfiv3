@@ -142,7 +142,7 @@
       }
       
       .product a[href*="amzn"] {
-        background: #111827; 
+        background: #ff2d55; 
         color: #fff;
       }
       
@@ -178,6 +178,56 @@
         color: #666; 
         margin-top: 2.5rem; 
         padding: 1rem;
+      }
+
+      /* Quick Compare */
+      .compare {
+        max-width: 1100px; 
+        margin: 2rem auto 0; 
+        padding: 0 1.5rem;
+      }
+      
+      .compare h2 {
+        font-size: 1.35rem; 
+        margin: 0.2rem 0 0.8rem;
+      }
+      
+      .table-wrap {
+        overflow: auto; 
+        background: #fff; 
+        border-radius: 10px; 
+        box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+      }
+      
+      .compare table {
+        width: 100%; 
+        border-collapse: collapse; 
+        min-width: 720px;
+      }
+      
+      .compare th, .compare td {
+        padding: 0.9rem; 
+        border-bottom: 1px solid #eee; 
+        text-align: left; 
+        font-size: 0.95rem;
+      }
+      
+      .compare th {
+        background: #f6f7fb; 
+        font-weight: 800;
+      }
+      
+      .compare td small {
+        color: #6b7280;
+      }
+      
+      .spec-pill {
+        display: inline-block; 
+        background: #f0fdf4; 
+        border: 1px solid #dcfce7; 
+        padding: 0.15rem 0.45rem; 
+        border-radius: 999px; 
+        font-size: 0.8rem;
       }
 
       /* Navigation breadcrumbs */
@@ -231,7 +281,7 @@
     <h3>Ninja AF161 Max XL</h3>
     <p>This 5.5‑quart model delivers fast, crispy results and easy cleanup. Great family capacity with simple controls and consistent performance.</p>
     <a href="https://amzn.to/3HlIXaj" target="_blank" rel="nofollow">Buy on Amazon</a>
-    <a href="/reviews/home/products/ninja-af161-max-xl-review.html">Read Full Review</a>
+    <a href="products/ninja-af161-max-xl-review.html">Read Full Review</a>
   </div>
 
   <div class="item">
@@ -240,7 +290,7 @@
     <h3>Cosori 9‑in‑1</h3>
     <p>Compact yet spacious—6‑quart model with app presets, quiet fan, and consistent cooking. Exceptional value for users cooking veggies, proteins, and meal batches.</p>
     <a href="https://amzn.to/4fpMaT0" target="_blank" rel="nofollow">Buy on Amazon</a>
-    <a href="/reviews/home/products/cosori-turboblaze-air-fryer-review.html">Read Full Review</a>
+    <a href="products/cosori-turboblaze-air-fryer-review.html">Read Full Review</a>
   </div>
 
   <div class="item">
@@ -249,9 +299,70 @@
     <h3>Instant Pot Vortex Plus</h3>
     <p>6‑quart multi-cooker with a view window and dehydrate option. Great beginner pick for juicy meats and fast cleanups.</p>
     <a href="https://amzn.to/41o8iHs" target="_blank" rel="nofollow">Buy on Amazon</a>
-    <a href="/reviews/home/products/instant-pot-vortex-plus-review.html">Read Full Review</a>
+    <a href="products/instant-pot-vortex-plus-review.html">Read Full Review</a>
   </div>
 </div>
+
+<!-- Quick Compare -->
+<section id="compare" class="compare">
+  <h2>Quick Compare (Key Specs)</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Capacity</th>
+          <th>Key Technology</th>
+          <th>Functions</th>
+          <th>Best For</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ninja AF161 Max XL</td>
+          <td>5.5 quarts</td>
+          <td><span class="spec-pill">Max Crisp</span></td>
+          <td>7-in-1 modes</td>
+          <td>All-around use</td>
+          <td><a class="btn btn-read" href="products/ninja-af161-max-xl-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem;">Review</a></td>
+        </tr>
+        <tr>
+          <td>Cosori 9-in-1</td>
+          <td>6 quarts</td>
+          <td><span class="spec-pill">TurboBlaze</span></td>
+          <td>9 functions + Turbo</td>
+          <td>Quiet operation</td>
+          <td><a class="btn btn-read" href="products/cosori-turboblaze-air-fryer-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem;">Review</a></td>
+        </tr>
+        <tr>
+          <td>Instant Pot Vortex Plus</td>
+          <td>6 quarts</td>
+          <td><span class="spec-pill">EvenCrisp</span></td>
+          <td>6 cooking modes</td>
+          <td>Versatility</td>
+          <td><a class="btn btn-read" href="products/instant-pot-vortex-plus-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem;">Review</a></td>
+        </tr>
+        <tr>
+          <td>Philips 3000 Series</td>
+          <td>6.5 quarts</td>
+          <td><span class="spec-pill">Rapid Air Plus</span></td>
+          <td>16 functions</td>
+          <td>Health-focused</td>
+          <td><a class="btn btn-read" href="products/philips-air-fryer-3000-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem;">Review</a></td>
+        </tr>
+        <tr>
+          <td>Typhur Dome 2</td>
+          <td>Large dome</td>
+          <td><span class="spec-pill">Self-cleaning</span></td>
+          <td>App control</td>
+          <td>Batch cooking</td>
+          <td><small style="color: #666;">Coming soon</small></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
 <!-- Full Top 5 -->
 <div class="product-list">
@@ -261,7 +372,7 @@
       <h4>#4 – Philips Air Fryer 3000 Series</h4>
       <p>Compact 4.2‑quart model using Rapid Air tech for even browning and fat reduction. Great for health‑focused users with tight kitchen space.</p>
       <a href="https://amzn.to/3UKcMV8" target="_blank" rel="nofollow">Buy on Amazon</a>
-      <a href="/reviews/home/products/philips-air-fryer-3000-review.html">Read Full Review</a>
+      <a href="products/philips-air-fryer-3000-review.html">Read Full Review</a>
     </div>
   </div>
 

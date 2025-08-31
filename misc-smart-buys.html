@@ -60,9 +60,8 @@
       }
 
       .deal-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1.5rem;
+        display: flex;
+        justify-content: center;
         margin-top: 2.5rem;
       }
 
@@ -74,6 +73,8 @@
         text-align: left;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         transition: all 0.2s ease;
+        max-width: 400px;
+        width: 100%;
       }
 
       .deal-card:hover {

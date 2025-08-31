@@ -87,9 +87,8 @@
 
       /* Teaser Grid Layout */
       .teasers-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
+        display: flex;
+        justify-content: center;
         margin-top: 2rem;
       }
 
@@ -101,6 +100,8 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         text-decoration: none;
         color: inherit;
+        max-width: 400px;
+        width: 100%;
       }
 
       .teaser:hover {
@@ -165,8 +166,7 @@
         }
         
         .teasers-grid {
-          grid-template-columns: 1fr;
-          gap: 1.5rem;
+          justify-content: center;
         }
       }
     </style>
