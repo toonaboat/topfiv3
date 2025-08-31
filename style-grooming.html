@@ -85,62 +85,45 @@
         text-decoration: underline;
       }
 
-      /* Teaser Grid Layout */
-      .teasers-grid {
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-      }
-
-      .teaser {
+      .teaser-block {
         background: #fff;
         border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        text-decoration: none;
-        color: inherit;
-        max-width: 400px;
-        width: 100%;
-      }
-
-      .teaser:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        text-decoration: none;
-        color: inherit;
-      }
-
-      .teaser-image {
-        width: 100%;
-        height: 180px;
-        background: linear-gradient(135deg, #a78bfa, #d8b4fe);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 1.1rem;
-        font-weight: 600;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 400px;
       }
 
       .teaser-content {
-        padding: 1.5rem;
-        text-align: left;
+        padding: 1.2rem 1.5rem;
       }
 
       .teaser-title {
-        font-size: 1.3rem;
-        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
         color: #111827;
-        margin: 0 0 0.5rem 0;
-        line-height: 1.3;
       }
 
-      .teaser-description {
-        color: #6b7280;
-        font-size: 0.95rem;
-        line-height: 1.5;
-        margin: 0;
+      .teaser-desc {
+        font-size: 1.05rem;
+        color: #444;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+      }
+
+      .teaser-link {
+        display: inline-block;
+        font-weight: 600;
+        color: #fff;
+        background-color: #111827;
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
       }
 
       .ad-banner {
@@ -206,16 +189,17 @@
 
 <div class="section">
   <div class="grid-wrapper">
-    <div class="teasers-grid">
-      <!-- Coming Soon Placeholder -->
-      <div class="teaser" style="opacity: 0.6; pointer-events: none;">
-        <div class="teaser-image">
-          <span style="color: white; font-size: 1.5rem; font-weight: 600;">Coming Soon</span>
+    <!-- Coming Soon Placeholder -->
+    <div class="teaser-block" style="opacity: 0.6;">
+      <div style="background: linear-gradient(135deg, #a78bfa, #d8b4fe); height: 220px; display: flex; align-items: center; justify-content: center;">
+        <span style="color: white; font-size: 1.5rem; font-weight: 600;">Coming Soon</span>
+      </div>
+      <div class="teaser-content">
+        <div class="teaser-title">Style & Grooming Rankings</div>
+        <div class="teaser-desc">
+          We're testing and ranking the best style and grooming products. Check back soon for electric razors, skincare devices, watches, and hair tools reviews.
         </div>
-        <div class="teaser-content">
-          <h3 class="teaser-title">Style & Grooming Rankings</h3>
-          <p class="teaser-description">We're testing and ranking the best style and grooming products. Check back soon for electric razors, skincare devices, watches, and hair tools reviews.</p>
-        </div>
+        <span class="teaser-link" style="background: #ccc; cursor: not-allowed;">Coming Soon</span>
       </div>
     </div>
   </div>
