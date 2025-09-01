@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://topfiv3.com/sitemap.xml
