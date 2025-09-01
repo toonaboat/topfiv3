@@ -59,73 +59,66 @@
         line-height: 1.7;
       }
 
-      .deal-grid {
-        display: flex;
-        justify-content: center;
+      .teaser-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
         margin-top: 2.5rem;
       }
 
-      .deal-card {
+      @media (min-width: 768px) {
+        .teaser-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .teaser-block {
         background: #fff;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        padding: 1.5rem;
-        text-align: left;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        transition: all 0.2s ease;
-        max-width: 400px;
-        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
       }
 
-      .deal-card:hover {
-        box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-      }
-
-      .deal-card img {
+      .teaser-block img {
         width: 100%;
-        height: 200px;
+        height: 220px;
         object-fit: cover;
-        border-radius: 8px;
-        margin-bottom: 1rem;
       }
 
-      .deal-card h3 {
-        font-size: 1.2rem;
-        margin: 0 0 0.5rem;
-        color: #111827;
+      .teaser-content {
+        padding: 1.2rem 1.5rem;
+      }
+
+      .teaser-title {
         font-family: 'Poppins', sans-serif;
-        font-weight: 600;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #111827;
       }
 
-      .deal-card p {
-        font-size: 0.95rem;
+      .teaser-desc {
+        font-size: 1.05rem;
+        color: #444;
         margin-bottom: 1rem;
-        color: #555;
-        line-height: 1.5;
+        line-height: 1.6;
       }
 
-      .deal-card a {
+      .teaser-link {
         display: inline-block;
-        background: #f59e0b;
-        color: white;
-        padding: 0.5rem 1rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #f59e0b;
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
         text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
         transition: background-color 0.3s ease;
       }
 
-      .deal-card a:hover {
-        background: #d97706;
-      }
-
-      .deal-card.placeholder {
-        opacity: 0.6;
-      }
-
-      .deal-card.placeholder a {
-        background-color: #9ca3af;
-        pointer-events: none;
+      .teaser-link:hover {
+        background-color: #d97706;
       }
 
       .ad-banner {
@@ -171,13 +164,31 @@
     These are the quirky, brilliant, and just plain useful products we find — everything from desk toys to trending TikTok gadgets. No ranking here — just good deals worth checking out.
   </p>
 
-  <div class="deal-grid">
+  <div class="teaser-grid">
     <!-- ASUS RTX 5070 Smart Buy -->
-    <div class="deal-card">
-      <img src="images/products/asusrtx5070.jpg" alt="ASUS RTX 5070 Graphics Card">
-      <h3>🔥 ASUS RTX 5070 - Below MSRP!</h3>
-      <p><strong>$523.79</strong> <s style="color: #999;">$609.99</s> - Save $86! This RTX 5070 with DLSS 4 and 12GB GDDR7 is priced below MSRP when most are above retail. Exceptional value for cutting-edge graphics.</p>
-      <a href="reviews/misc/asus-rtx-5070-smart-buy-review.html">Read Smart Buy Review</a>
+    <div class="teaser-block">
+      <img src="images/teasers/asusrtx5070teaser.jpg" alt="ASUS RTX 5070 Graphics Card">
+      <div class="teaser-content">
+        <div class="teaser-title">🔥 ASUS RTX 5070 - Below MSRP!</div>
+        <div class="teaser-desc">
+          <strong>$523.79</strong> <s style="color: #999;">$609.99</s> - Save $86! This RTX 5070 with DLSS 4 and 12GB GDDR7 is priced below MSRP when most are above retail. Exceptional value for cutting-edge graphics.
+        </div>
+        <a href="reviews/misc/asus-rtx-5070-smart-buy-review.html" class="teaser-link">Read Smart Buy Review</a>
+      </div>
+    </div>
+
+    <!-- Coming Soon Placeholder -->
+    <div class="teaser-block" style="opacity: 0.6;">
+      <div style="background: linear-gradient(135deg, #fbbf24, #fde68a); height: 220px; display: flex; align-items: center; justify-content: center;">
+        <span style="color: white; font-size: 1.5rem; font-weight: 600;">Coming Soon</span>
+      </div>
+      <div class="teaser-content">
+        <div class="teaser-title">More Smart Buys Coming Soon</div>
+        <div class="teaser-desc">
+          We're curating more smart buys, trending gadgets, and interesting finds. Check back soon for great deals and clever products worth your attention.
+        </div>
+        <span class="teaser-link" style="background: #ccc; cursor: not-allowed;">Coming Soon</span>
+      </div>
     </div>
   </div>
 
