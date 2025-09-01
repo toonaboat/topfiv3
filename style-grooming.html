@@ -63,8 +63,16 @@
         text-align: center;
       }
 
-      .grid-wrapper {
-        margin-top: 2.5rem;
+      .teaser-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        .teaser-grid {
+          grid-template-columns: 1fr 1fr;
+        }
       }
 
       /* Navigation breadcrumbs */
@@ -92,8 +100,12 @@
         box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
-        max-width: 400px;
+      }
+
+      .teaser-block img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
       }
 
       .teaser-content {
@@ -188,16 +200,28 @@
 </div>
 
 <div class="section">
-  <div class="grid-wrapper">
+  <div class="teaser-grid">
+    <!-- Skincare Products -->
+    <div class="teaser-block">
+      <img src="images/teasers/top5skincareproductsteaser.png" alt="Top 5 Skincare Products 2025">
+      <div class="teaser-content">
+        <div class="teaser-title">Top 5 Skincare Products 2025</div>
+        <div class="teaser-desc">
+          From gentle cleansers to powerful serums and protective moisturizers, we tested efficacy, ingredients, and real-world results. CeraVe, The Ordinary, and COSRX lead the pack.
+        </div>
+        <a href="reviews/style/skincare-products-2025.html" class="teaser-link">View Rankings</a>
+      </div>
+    </div>
+
     <!-- Coming Soon Placeholder -->
     <div class="teaser-block" style="opacity: 0.6;">
       <div style="background: linear-gradient(135deg, #a78bfa, #d8b4fe); height: 220px; display: flex; align-items: center; justify-content: center;">
         <span style="color: white; font-size: 1.5rem; font-weight: 600;">Coming Soon</span>
       </div>
       <div class="teaser-content">
-        <div class="teaser-title">Style & Grooming Rankings</div>
+        <div class="teaser-title">More Style & Grooming Rankings</div>
         <div class="teaser-desc">
-          We're testing and ranking the best style and grooming products. Check back soon for electric razors, skincare devices, watches, and hair tools reviews.
+          We're testing and ranking more style and grooming products. Check back soon for electric razors, skincare devices, watches, and hair tools reviews.
         </div>
         <span class="teaser-link" style="background: #ccc; cursor: not-allowed;">Coming Soon</span>
       </div>

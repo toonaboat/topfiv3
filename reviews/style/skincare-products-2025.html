@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Skincare Products of 2025 - Expert Reviews & Rankings | TopFiv3</title>
+    <meta name="description" content="Top 5 skincare products ranked by experts. Compare the best cleansers, serums, and moisturizers for all skin types. CeraVe, The Ordinary, and more reviewed.">
+    <meta name="keywords" content="best skincare products, top 5 skincare, top five beauty products, skincare routine essentials, CeraVe cleanser, The Ordinary niacinamide, COSRX snail mucin, Hero Cosmetics patches, La Roche-Posay moisturizer">
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+
+    <style>
+      body { 
+        font-family: 'Poppins', sans-serif; 
+        color: #222; 
+        background: #fafafa; 
+        margin: 0; 
+      }
+      
+      .ranking-hero {
+        background: url('../../images/reviews/top5skincareproductsbanner.png') center center/cover no-repeat;
+        height: 320px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        color: white; 
+        font-size: 2.8rem; 
+        font-weight: 800; 
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        text-align: center;
+      }
+      
+      .intro { 
+        max-width: 900px; 
+        margin: 2rem auto; 
+        padding: 0 1.5rem; 
+        font-size: 1.2rem; 
+        line-height: 1.7; 
+      }
+      
+      .top3-spotlight {
+        max-width: 1100px; 
+        margin: 2rem auto; 
+        display: grid; 
+        grid-template-columns: 1fr; 
+        gap: 1.5rem; 
+        padding: 0 1.5rem;
+      }
+      
+      .top3-spotlight .item {
+        background: #fff; 
+        border-left: 6px solid #10b981; 
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        padding: 1.5rem; 
+        border-radius: 10px; 
+        text-align: center;
+      }
+      
+      .top3-spotlight .item img {
+        width: 100%; 
+        max-width: 220px; 
+        height: auto; 
+        margin-bottom: 1rem; 
+        border-radius: 8px;
+      }
+      
+      .item h3 { 
+        margin-top: 0; 
+        font-size: 1.4rem; 
+      }
+      
+      .item .tag {
+        display: inline-block; 
+        background: #10b981; 
+        color: #fff; 
+        padding: 4px 10px;
+        font-size: 0.85rem; 
+        border-radius: 5px; 
+        margin-bottom: 0.6rem;
+      }
+      
+      .item a {
+        display: inline-block; 
+        margin: 0.5rem 0.5rem 0 0; 
+        padding: 0.6rem 1.2rem; 
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      
+      .item a[href*="amzn"] {
+        background: #ff2d55; 
+        color: #fff;
+      }
+      
+      .item a[href*="products"] {
+        background: #f3f4f6;
+        color: #333;
+      }
+      
+      .product-list {
+        max-width: 1100px; 
+        margin: 3rem auto; 
+        padding: 0 1.5rem; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 2rem;
+      }
+      
+      .product { 
+        background: #fff; 
+        border-radius: 10px; 
+        box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        padding: 1.5rem; 
+        display: flex; 
+        gap: 1.5rem; 
+        align-items: center; 
+        flex-wrap: wrap;
+      }
+      
+      .product img { 
+        width: 220px;
+        max-width: 40vw;
+        border-radius: 8px; 
+      }
+      
+      .product-info { 
+        flex: 1; 
+      }
+      
+      .product h4 { 
+        margin-top: 0; 
+      }
+      
+      .product a {
+        display: inline-block; 
+        margin: 0.5rem 0.5rem 0 0; 
+        padding: 0.6rem 1.2rem; 
+        border-radius: 8px; 
+        text-decoration: none;
+        font-weight: 600;
+      }
+      
+      .product a[href*="amzn"] {
+        background: #ff2d55; 
+        color: #fff;
+      }
+      
+      .product a[href*="products"] {
+        background: #111827; 
+        color: #fff;
+      }
+      
+      .cta-section {
+        text-align: center; 
+        max-width: 800px; 
+        margin: 4rem auto 2rem; 
+        padding: 2rem; 
+        background: #fff;
+        border-radius: 12px; 
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      }
+      
+      .cta-section a {
+        display: inline-block; 
+        margin-top: 1rem; 
+        padding: 0.75rem 1.5rem; 
+        background: #111827;
+        color: #fff; 
+        font-weight: 600; 
+        border-radius: 8px; 
+        text-decoration: none;
+      }
+      
+      .disclaimer {
+        font-size: 0.85rem; 
+        text-align: center; 
+        color: #666; 
+        margin-top: 2.5rem; 
+        padding: 1rem;
+      }
+
+      /* Quick Compare */
+      .compare {
+        max-width: 1100px; 
+        margin: 2rem auto 0; 
+        padding: 0 1.5rem;
+      }
+      
+      .compare h2 {
+        font-size: 1.35rem; 
+        margin: 0.2rem 0 0.8rem;
+      }
+      
+      .table-wrap {
+        overflow: auto; 
+        background: #fff; 
+        border-radius: 10px; 
+        box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+      }
+      
+      .compare table {
+        width: 100%; 
+        border-collapse: collapse; 
+        min-width: 720px;
+      }
+      
+      .compare th, .compare td {
+        padding: 0.9rem; 
+        border-bottom: 1px solid #eee; 
+        text-align: left; 
+        font-size: 0.95rem;
+      }
+      
+      .compare th {
+        background: #f6f7fb; 
+        font-weight: 800;
+      }
+      
+      .compare td small {
+        color: #6b7280;
+      }
+      
+      .spec-pill {
+        display: inline-block; 
+        background: #f0fdf4; 
+        border: 1px solid #dcfce7; 
+        padding: 0.15rem 0.45rem; 
+        border-radius: 999px; 
+        font-size: 0.8rem;
+      }
+
+      /* Navigation breadcrumbs */
+      .breadcrumbs {
+        max-width: 1100px;
+        margin: 1rem auto;
+        padding: 0 1.5rem;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      .breadcrumbs a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+
+      .breadcrumbs a:hover {
+        text-decoration: underline;
+      }
+      
+      @media (min-width: 768px) {
+        .top3-spotlight { 
+          grid-template-columns: repeat(3, 1fr); 
+        }
+      }
+    </style>
+</head>
+<body>
+
+<div class="breadcrumbs">
+  <a href="../../index.html">Home</a> > 
+  <a href="../../style-grooming.html">Style & Grooming</a> > 
+  <span>Skincare Products 2025</span>
+</div>
+
+<!-- Hero -->
+<div class="ranking-hero">
+  Top 5 Skincare Products of 2025
+</div>
+
+<!-- Intro -->
+<div class="intro">
+  From gentle cleansers to powerful serums and protective moisturizers, we tested efficacy, ingredients, and real-world results across dozens of skincare products. Only 5 earned our recommendation. Only 3 earned our spotlight.
+</div>
+
+<!-- Top 3 Spotlight -->
+<div class="top3-spotlight">
+  <div class="item">
+    <img src="../../images/products/ceravehydratingfacialcleanser.jpg" alt="CeraVe Hydrating Facial Cleanser">
+    <span class="tag">#1 Best Gentle Cleanser</span>
+    <h3>CeraVe Hydrating Facial Cleanser</h3>
+    <p>Ceramide-rich formula cleanses without stripping moisture. Perfect for all skin types with MVE technology for sustained hydration and barrier protection.</p>
+    <a href="https://amzn.to/3I0hA64" target="_blank" rel="nofollow">Buy on Amazon</a>
+    <a href="products/cerave-hydrating-facial-cleanser-review.html">Read Full Review</a>
+  </div>
+
+  <div class="item">
+    <img src="../../images/products/theordinaryniacinamide10zinc1.jpg" alt="The Ordinary Niacinamide 10% + Zinc 1%">
+    <span class="tag">#2 Best Oil Control Serum</span>
+    <h3>The Ordinary Niacinamide 10% + Zinc 1%</h3>
+    <p>Clinical-strength formula reduces oil production, minimizes pores, and brightens skin. Exceptional value with proven results for blemish-prone skin.</p>
+    <a href="https://amzn.to/4lYVZZM" target="_blank" rel="nofollow">Buy on Amazon</a>
+    <a href="products/the-ordinary-niacinamide-zinc-review.html">Read Full Review</a>
+  </div>
+
+  <div class="item">
+    <img src="../../images/products/cosrxsnailmucin96poweressence.jpg" alt="COSRX Snail 96 Mucin Power Essence">
+    <span class="tag">#3 Best Hydrating Essence</span>
+    <h3>COSRX Snail 96 Mucin Power Essence</h3>
+    <p>96% snail secretion filtrate provides intensive hydration and repair. Lightweight K-beauty essential for healing, glow, and improved skin texture.</p>
+    <a href="https://amzn.to/47nEIpn" target="_blank" rel="nofollow">Buy on Amazon</a>
+    <a href="products/cosrx-snail-96-mucin-power-essence-review.html">Read Full Review</a>
+  </div>
+</div>
+
+<!-- Quick Compare -->
+<section id="compare" class="compare">
+  <h2>Quick Compare (Key Specs)</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Key Benefit</th>
+          <th>Skin Type</th>
+          <th>Best For</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CeraVe Hydrating Cleanser</td>
+          <td>Cleanser</td>
+          <td><span class="spec-pill">Barrier Protection</span></td>
+          <td>All types</td>
+          <td>Daily gentle cleansing</td>
+          <td><a class="btn btn-read" href="products/cerave-hydrating-facial-cleanser-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem;">Review</a></td>
+        </tr>
+        <tr>
+          <td>The Ordinary Niacinamide</td>
+          <td>Serum</td>
+          <td><span class="spec-pill">Oil Control</span></td>
+          <td>Oily/combination</td>
+          <td>Pore minimizing</td>
+          <td><a class="btn btn-read" href="products/the-ordinary-niacinamide-zinc-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem;">Review</a></td>
+        </tr>
+        <tr>
+          <td>COSRX Snail Mucin Essence</td>
+          <td>Essence</td>
+          <td><span class="spec-pill">Hydration & Repair</span></td>
+          <td>All types</td>
+          <td>Skin healing</td>
+          <td><a class="btn btn-read" href="products/cosrx-snail-96-mucin-power-essence-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem;">Review</a></td>
+        </tr>
+        <tr>
+          <td>Hero Mighty Patch Invisible</td>
+          <td>Treatment</td>
+          <td><span class="spec-pill">Spot Treatment</span></td>
+          <td>Acne-prone</td>
+          <td>Pimple patches</td>
+          <td><a class="btn btn-read" href="products/hero-cosmetics-mighty-patch-invisible-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem;">Review</a></td>
+        </tr>
+        <tr>
+          <td>La Roche-Posay Toleriane</td>
+          <td>Moisturizer</td>
+          <td><span class="spec-pill">SPF Protection</span></td>
+          <td>Sensitive</td>
+          <td>Daily moisturizer</td>
+          <td><a class="btn btn-read" href="products/la-roche-posay-toleriane-double-repair-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem;">Review</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Full Top 5 -->
+<div class="product-list">
+  <div class="product">
+    <img src="../../images/products/herocosmeticsmightypatchinvisible.jpg" alt="Hero Cosmetics Mighty Patch Invisible">
+    <div class="product-info">
+      <h4>#4 – Hero Cosmetics Mighty Patch Invisible</h4>
+      <p>Ultra-thin hydrocolloid patches draw out impurities and protect blemishes. Transparent design for daytime wear with overnight effectiveness for targeted spot treatment.</p>
+      <a href="https://amzn.to/3JAqQhR" target="_blank" rel="nofollow">Buy on Amazon</a>
+      <a href="products/hero-cosmetics-mighty-patch-invisible-review.html" style="background: #111827; color: #fff; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none;">Read Full Review</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="../../images/products/larocheposaytoleranedoublerepair.jpg" alt="La Roche-Posay Toleriane Double Repair">
+    <div class="product-info">
+      <h4>#5 – La Roche-Posay Toleriane Double Repair Face Moisturizer</h4>
+      <p>Prebiotic thermal water and ceramide formula with SPF 30 protection. Ideal for sensitive skin with barrier restoration and UV defense in one step.</p>
+      <a href="https://amzn.to/461rWdQ" target="_blank" rel="nofollow">Buy on Amazon</a>
+      <a href="products/la-roche-posay-toleriane-double-repair-review.html" style="background: #111827; color: #fff; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none;">Read Full Review</a>
+    </div>
+  </div>
+</div>
+
+<!-- CTA Section -->
+<div class="cta-section">
+  Want more style & grooming product reviews? Visit the full <strong>Style & Grooming</strong> category for top picks, deep dives, and expert recommendations.
+  <br>
+  <a href="../../style-grooming.html">Explore Style & Grooming Rankings</a>
+</div>
+
+<div class="disclaimer">
+  <em>Disclosure:</em> This page contains affiliate links. We may earn a commission if you click and make a purchase — at no additional cost to you. This helps support our work. Thank you!
+</div>
+
+</body>
+</html>
