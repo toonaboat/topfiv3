@@ -177,5 +177,53 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- DIY & Tools Review Pages -->
+  <url>
+    <loc>https://topfiv3.com/reviews/diy/cordless-drill-impact-combos-2025.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- DIY Product Review Pages -->
+  <url>
+    <loc>https://topfiv3.com/reviews/diy/products/dewalt-dck240c2-review.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/diy/products/milwaukee-2997-22-review.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/diy/products/craftsman-cmck200c2am-review.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/diy/products/dewalt-dck299m2-review.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/diy/products/makita-ct225syx-review.html</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Misc & Smart Buys Product Review Pages -->
+  <url>
+    <loc>https://topfiv3.com/reviews/misc/products/asus-rtx-5070-review.html</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Updated for GitHub Pages MIME type fix -->
 </urlset>
