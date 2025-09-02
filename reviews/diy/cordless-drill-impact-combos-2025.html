@@ -91,18 +91,71 @@
   /* Intro */
   .intro{max-width:900px;margin:1.25rem auto 1.5rem;padding:0 1.25rem;font-size:1.05rem;line-height:1.7}
   /* Top 3 spotlight */
-  .top3-spotlight{max-width:1100px;margin:1.5rem auto;display:grid;grid-template-columns:1fr;gap:1.25rem;padding:0 1.25rem}
-  @media (min-width:768px){.top3-spotlight{grid-template-columns:repeat(3,1fr)}}
-  .card{background:var(--card);border-left:6px solid var(--brand);box-shadow:0 6px 24px rgba(0,0,0,.06);padding:1.1rem;border-radius:var(--radius);text-align:center}
-  .card img{width:100%;max-width:220px;height:auto;margin:.25rem auto 1rem;border-radius:10px;display:block;aspect-ratio:1/1;object-fit:cover}
-  .tag{display:inline-block;background:var(--brand);color:#fff;padding:.35rem .6rem;font-size:.8rem;border-radius:6px;margin-bottom:.5rem}
-  .card h3{margin:.2rem 0 .4rem;font-size:1.15rem}
-  .card p{margin:.3rem 0 .5rem;color:#333;font-size:.95rem}
-  .cta-row{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap}
-  .btn{display:inline-block;padding:.6rem 1rem;border-radius:10px;font-weight:700;text-decoration:none}
-  .btn-buy{background:var(--cta);color:#fff}
-  .btn-read{background:#111827;color:#fff}
-  .btn:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
+  .top3-spotlight { 
+    max-width: 1100px; 
+    margin: 2rem auto; 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1.5rem; 
+    padding: 0 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .top3-spotlight { 
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+  
+  .top3-spotlight .item {
+    background: #fff; 
+    border-left: 6px solid var(--brand); 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 1.5rem; 
+    border-radius: 10px; 
+    text-align: center;
+  }
+  
+  .top3-spotlight .item img {
+    width: 100%; 
+    max-width: 220px; 
+    height: auto; 
+    margin-bottom: 1rem; 
+    border-radius: 8px;
+  }
+  
+  .item h3 { 
+    margin-top: 0; 
+    font-size: 1.4rem; 
+  }
+  
+  .item .tag {
+    display: inline-block; 
+    background: var(--brand); 
+    color: #fff; 
+    padding: 4px 10px;
+    font-size: 0.85rem; 
+    border-radius: 5px; 
+    margin-bottom: 0.6rem;
+  }
+  
+  .item a {
+    display: inline-block; 
+    margin: 0.5rem 0.5rem 0 0; 
+    padding: 0.6rem 1.2rem; 
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .item a[href*="amzn"] {
+    background: #ff2d55; 
+    color: #fff;
+  }
+  
+  .item a[href*="products"] {
+    background: #111827; 
+    color: #fff;
+  }
   /* Quick Compare */
   .compare{max-width:1100px;margin:2rem auto 0;padding:0 1.25rem}
   .compare h2{font-size:1.35rem;margin:.2rem 0 .8rem}
@@ -125,6 +178,28 @@
   .back-link{max-width:1180px;margin:1rem auto;padding:0 1.25rem}
   .back-link a{display:inline-block;background:#f3f4f6;color:#333;padding:.5rem 1rem;border-radius:6px;text-decoration:none;font-size:.9rem;transition:background-color .3s ease}
   .back-link a:hover{background:#e5e7eb}
+  /* CTA Section */
+  .cta-section {
+    text-align: center; 
+    max-width: 800px; 
+    margin: 4rem auto 2rem; 
+    padding: 2rem; 
+    background: #fff;
+    border-radius: 12px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  .cta-section a {
+    display: inline-block; 
+    margin-top: 1rem; 
+    padding: 0.75rem 1.5rem; 
+    background: #111827;
+    color: #fff; 
+    font-weight: 600; 
+    border-radius: 8px; 
+    text-decoration: none;
+  }
+  
   /* Footer disclaimer */
   .disclaimer{font-size:.85rem;text-align:center;color:#666;margin-top:2.5rem;padding:1rem}
 </style>
@@ -163,37 +238,31 @@
 </div>
 
 <div id="top3" class="top3-spotlight">
-  <div class="card">
-    <div class="tag">#1 Best Value</div>
-    <img src="../../images/products/dewaltdck240c2.jpg" alt="DEWALT DCK240C2 Combo Kit" loading="lazy">
-    <h3>DEWALT DCK240C2</h3>
-    <p>Reliable brushed motors, compact design, two 1.3Ah batteries. Perfect entry-level combo for DIYers and basic home projects.</p>
-    <div class="cta-row">
-      <a href="https://amzn.to/4g3kSlq" class="btn btn-buy" target="_blank" rel="nofollow">Buy on Amazon</a>
-      <a href="products/dewalt-dck240c2-review.html" class="btn btn-read">Read Review</a>
-    </div>
+  <div class="item">
+    <img src="../../images/products/dewaltdck240c2.jpg" alt="DEWALT 20V MAX Cordless Drill and Impact Driver Combo Kit">
+    <span class="tag">#1 Best Value</span>
+    <h3>DEWALT 20V MAX Cordless Drill and Impact Driver Combo Kit</h3>
+    <p>Reliable brushed motors with 300 UWO power, compact design, and two 1.3Ah batteries. Perfect entry-level combo for DIYers and basic home projects with proven DEWALT quality.</p>
+    <a href="https://amzn.to/4g3kSlq" target="_blank" rel="nofollow">Buy on Amazon</a>
+    <a href="products/dewalt-dck240c2-review.html">Read Full Review</a>
+  </div>
+
+  <div class="item">
+    <img src="../../images/products/milwaukee2997-22.jpg" alt="Milwaukee M18 FUEL Brushless Combo Kit">
+    <span class="tag">#2 Professional Choice</span>
+    <h3>Milwaukee M18 FUEL Brushless Combo Kit</h3>
+    <p>Premium brushless motors with 1,200 in-lbs hammer drill and 2,000 in-lbs impact driver. Features REDLINK PLUS intelligence and two 5.0Ah batteries for professional applications.</p>
+    <a href="https://amzn.to/4pktj0j" target="_blank" rel="nofollow">Buy on Amazon</a>
+    <a href="products/milwaukee-2997-22-review.html">Read Full Review</a>
   </div>
   
-  <div class="card">
-    <div class="tag">#2 Professional Choice</div>
-    <img src="../../images/products/milwaukee2997-22.jpg" alt="Milwaukee 2997-22 Combo Kit" loading="lazy">
-    <h3>Milwaukee 2997-22</h3>
-    <p>High-torque brushless motors, 2,000 in-lbs impact driver, two 5Ah batteries. Premium performance for demanding trades.</p>
-    <div class="cta-row">
-      <a href="https://amzn.to/4pktj0j" class="btn btn-buy" target="_blank" rel="nofollow">Buy on Amazon</a>
-      <a href="products/milwaukee-2997-22-review.html" class="btn btn-read">Read Review</a>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div class="tag">#3 Budget Pick</div>
-    <img src="../../images/products/craftsmancmck200c2am.jpg" alt="CRAFTSMAN CMCK200C2AM Combo Kit" loading="lazy">
-    <h3>CRAFTSMAN CMCK200C2AM</h3>
-    <p>Affordable V20 system compatibility, compact size, solid performance for woodworking and assembly tasks.</p>
-    <div class="cta-row">
-      <a href="https://amzn.to/4n7HsM2" class="btn btn-buy" target="_blank" rel="nofollow">Buy on Amazon</a>
-      <a href="products/craftsman-cmck200c2am-review.html" class="btn btn-read">Read Review</a>
-    </div>
+  <div class="item">
+    <img src="../../images/products/craftsmancmck200c2am.jpg" alt="CRAFTSMAN V20 MAX Combo Kit">
+    <span class="tag">#3 Budget Pick</span>
+    <h3>CRAFTSMAN V20 MAX Combo Kit</h3>
+    <p>Affordable V20 system compatibility with 280 UWO drill and 1,460 in-lbs impact driver. Compact size and solid performance for woodworking and assembly tasks.</p>
+    <a href="https://amzn.to/4n7HsM2" target="_blank" rel="nofollow">Buy on Amazon</a>
+    <a href="products/craftsman-cmck200c2am-review.html">Read Full Review</a>
   </div>
 </div>
 
@@ -208,111 +277,81 @@
           <th>Max Torque</th>
           <th>Battery</th>
           <th>Key Features</th>
+          <th>Review</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><strong>DEWALT DCK240C2</strong> <small class="spec-pill">Best Value</small></td>
+          <td>DEWALT 20V MAX Combo <small class="spec-pill">Best Value</small></td>
           <td>Brushed</td>
           <td>300 UWO / 2,800 RPM</td>
           <td>2x 1.3Ah</td>
           <td>3-LED lights, compact design</td>
+          <td><a href="products/dewalt-dck240c2-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem; border-radius: 8px; text-decoration: none;">Review</a></td>
         </tr>
         <tr>
-          <td><strong>Milwaukee 2997-22</strong> <small class="spec-pill">Pro Choice</small></td>
+          <td>Milwaukee M18 FUEL <small class="spec-pill">Pro Choice</small></td>
           <td>Brushless</td>
           <td>1,200 / 2,000 in-lbs</td>
           <td>2x 5.0Ah</td>
           <td>REDLINK PLUS, hammer function</td>
+          <td><a href="products/milwaukee-2997-22-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem; border-radius: 8px; text-decoration: none;">Review</a></td>
         </tr>
         <tr>
-          <td><strong>CRAFTSMAN CMCK200C2AM</strong> <small class="spec-pill">Budget</small></td>
+          <td>CRAFTSMAN V20 MAX <small class="spec-pill">Budget</small></td>
           <td>Brushed</td>
           <td>280 UWO / 1,460 in-lbs</td>
           <td>2x 1.5Ah</td>
           <td>V20 system, LED lights</td>
+          <td><a href="products/craftsman-cmck200c2am-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem; border-radius: 8px; text-decoration: none;">Review</a></td>
         </tr>
         <tr>
-          <td><strong>DEWALT DCK299M2</strong></td>
+          <td>DEWALT 20V MAX XR Brushless</td>
           <td>Brushless</td>
           <td>Hammer / 1,825 in-lbs</td>
           <td>2x 4.0Ah</td>
           <td>3-speed, 20X brighter LEDs</td>
+          <td><a href="products/dewalt-dck299m2-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem; border-radius: 8px; text-decoration: none;">Review</a></td>
         </tr>
         <tr>
-          <td><strong>Makita CT225SYX</strong></td>
+          <td>Makita 18V LXT Compact</td>
           <td>Brushed</td>
           <td>480 / 1,460 in-lbs</td>
           <td>2x 1.5Ah</td>
           <td>XPT protection, compact design</td>
+          <td><a href="products/makita-ct225syx-review.html" style="background: #111827; color: #fff; padding: 0.4rem 0.8rem; font-size: 0.8rem; border-radius: 8px; text-decoration: none;">Review</a></td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
 
-<div id="full-list" class="product-list">
-  <h2 class="wrap" style="margin-bottom:1rem">All 5 Ranked</h2>
-  
+<div class="product-list">
   <div class="product">
-    <img src="../../images/products/dewaltdck240c2.jpg" alt="DEWALT DCK240C2" loading="lazy">
+    <img src="../../images/products/dewaltdck299m2.jpg" alt="DEWALT 20V MAX XR Brushless Hammer Drill Combo Kit">
     <div class="product-info">
-      <h4>#1 DEWALT 20V MAX Cordless Combo Kit (DCK240C2)</h4>
-      <p>The best entry-level combo delivers reliable performance with brushed motors, compact design, and excellent value. Includes drill/driver, impact driver, two 1.3Ah batteries, charger, and bag.</p>
-      <div class="product-cta">
-        <a href="https://amzn.to/4g3kSlq" class="btn btn-buy" target="_blank" rel="nofollow">Buy Now</a>
-        <a href="products/dewalt-dck240c2-review.html" class="btn btn-read">Full Review</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="product">
-    <img src="../../images/products/milwaukee2997-22.jpg" alt="Milwaukee 2997-22" loading="lazy">
-    <div class="product-info">
-      <h4>#2 Milwaukee M18 FUEL Brushless Combo Kit (2997-22)</h4>
-      <p>Premium performance kit with brushless hammer drill and high-torque impact driver (2,000 in-lbs). Features Auto-Stop technology, tri-LED lights, and two 5.0Ah batteries for professional use.</p>
-      <div class="product-cta">
-        <a href="https://amzn.to/4pktj0j" class="btn btn-buy" target="_blank" rel="nofollow">Buy Now</a>
-        <a href="products/milwaukee-2997-22-review.html" class="btn btn-read">Full Review</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="product">
-    <img src="../../images/products/craftsmancmck200c2am.jpg" alt="CRAFTSMAN CMCK200C2AM" loading="lazy">
-    <div class="product-info">
-      <h4>#3 CRAFTSMAN V20 MAX Combo Kit (CMCK200C2AM)</h4>
-      <p>Affordable and versatile combo with compact tools, V20 system compatibility, and solid performance for woodworking and assembly. Great value for homeowners and hobbyists.</p>
-      <div class="product-cta">
-        <a href="https://amzn.to/4n7HsM2" class="btn btn-buy" target="_blank" rel="nofollow">Buy Now</a>
-        <a href="products/craftsman-cmck200c2am-review.html" class="btn btn-read">Full Review</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="product">
-    <img src="../../images/products/dewaltdck299m2.jpg" alt="DEWALT DCK299M2" loading="lazy">
-    <div class="product-info">
-      <h4>#4 DEWALT 20V MAX Hammer Drill Combo Kit (DCK299M2)</h4>
+      <h4>#4 – DEWALT 20V MAX XR Brushless Hammer Drill Combo Kit</h4>
       <p>Heavy-duty combo with hammer function for masonry work, brushless motors, and high torque output (1,825 in-lbs). Includes two 4.0Ah batteries for extended runtime on demanding jobs.</p>
-      <div class="product-cta">
-        <a href="https://amzn.to/3UVyPbC" class="btn btn-buy" target="_blank" rel="nofollow">Buy Now</a>
-        <a href="products/dewalt-dck299m2-review.html" class="btn btn-read">Full Review</a>
-      </div>
+      <a href="https://amzn.to/3UVyPbC" target="_blank" rel="nofollow">Buy on Amazon</a>
+      <a href="products/dewalt-dck299m2-review.html" style="background: #111827; color: #fff; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none;">Read Full Review</a>
     </div>
   </div>
-  
+
   <div class="product">
-    <img src="../../images/products/makitact225syx.jpg" alt="Makita CT225SYX" loading="lazy">
+    <img src="../../images/products/makitact225syx.jpg" alt="Makita 18V LXT Compact Combo Kit">
     <div class="product-info">
-      <h4>#5 Makita 18V LXT Compact Combo Kit (CT225SYX)</h4>
-      <p>Lightweight brushed tools with excellent build quality. XFD10Z drill delivers up to 480 in-lbs torque, XDT11Z impact driver up to 1,460 in-lbs. Perfect for DIY and woodworking projects.</p>
-      <div class="product-cta">
-        <a href="https://amzn.to/3JYqZLU" class="btn btn-buy" target="_blank" rel="nofollow">Buy Now</a>
-        <a href="products/makita-ct225syx-review.html" class="btn btn-read">Full Review</a>
-      </div>
+      <h4>#5 – Makita 18V LXT Compact Combo Kit</h4>
+      <p>Lightweight brushed tools with excellent build quality. Driver-drill delivers up to 480 in-lbs torque, impact driver up to 1,460 in-lbs. Perfect for DIY and woodworking projects with Japanese precision.</p>
+      <a href="https://amzn.to/3JYqZLU" target="_blank" rel="nofollow">Buy on Amazon</a>
+      <a href="products/makita-ct225syx-review.html" style="background: #111827; color: #fff; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none;">Read Full Review</a>
     </div>
   </div>
+</div>
+
+<div class="cta-section">
+  Want more DIY & tools product reviews? Visit the full <strong>DIY & Tools</strong> category for top picks, deep dives, and expert recommendations.
+  <br>
+  <a href="../../diy-tools.html">Explore DIY & Tools Rankings</a>
 </div>
 
 <div class="disclaimer">
