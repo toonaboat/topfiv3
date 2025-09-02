@@ -281,7 +281,38 @@
 
 ---
 
-## MAIN CATEGORY PAGE TEASER FORMAT
+## MAIN CATEGORY PAGE TEASER FORMAT (Standard Categories)
+
+### Structure (from diy-tools.html):
+```html
+<div class="section">
+  <div class="teaser-grid">
+    <div class="teaser-block">
+      <img src="images/teasers/top5cordlessdrillimpactteaser.png" alt="Top 5 Cordless Drill & Impact Driver Combos 2025">
+      <div class="teaser-content">
+        <div class="teaser-title">Top 5 Cordless Drill & Impact Driver Combos 2025</div>
+        <div class="teaser-desc">
+          We tested 15+ combo kits from DEWALT, Milwaukee, CRAFTSMAN, and Makita. From budget picks to professional-grade powerhouses, discover the top 3 combos that deliver the best value.
+        </div>
+        <a href="reviews/diy/cordless-drill-impact-combos-2025.html" class="teaser-link">View Rankings</a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Required CSS Classes (Standard Categories):
+- `.section` - Main container
+- `.teaser-grid` - Grid container (2-column on desktop)
+- `.teaser-block` - Individual teaser card
+- `.teaser-content` - Text content wrapper
+- `.teaser-title` - Ranking page title
+- `.teaser-desc` - Brief description
+- `.teaser-link` - Rankings link ("View Rankings")
+
+---
+
+## MISC CATEGORY PAGE TEASER FORMAT (Special Format)
 
 ### Structure (from misc-smart-buys.html):
 ```html
@@ -297,13 +328,13 @@
 </div>
 ```
 
-### Required CSS Classes:
+### Required CSS Classes (MISC Only):
 - `.teaser-grid` - Grid container
-- `.teaser-block` - Individual teaser card
+- `.teaser-block` - Individual teaser card  
 - `.teaser-content` - Text content wrapper
 - `.teaser-title` - Product name
-- `.teaser-description` - Brief description 
-- `.teaser-link` - Review link
+- `.teaser-description` - Brief description (different class name!)
+- `.teaser-link` - Review link ("Read Review →")
 
 ---
 
@@ -352,6 +383,7 @@
 ### File Structure Verification:
 - [ ] Product images: `images/products/[product-name].jpg`
 - [ ] Banner images: `images/reviews/[banner-name].png` 
+- [ ] Teaser images: `images/teasers/[teaser-name].png` (for standard categories)
 - [ ] Review files: `reviews/[category]/products/[product-review].html`
 - [ ] Top 5 files: `reviews/[category]/[category-name]-2025.html`
 
@@ -361,5 +393,45 @@
 - [ ] Proper SEO meta tags and structured data
 - [ ] Consistent CSS classes and styling
 - [ ] All affiliate disclosures included
+
+---
+
+## POST-CREATION REQUIREMENTS (BEFORE PUSHING TO GITHUB)
+
+### MANDATORY Final Steps:
+- [ ] **UPDATE SITEMAP.XML** - Add ALL new pages with current date
+- [ ] **VERIFY SEO OPTIMIZATION** - Meta descriptions, keywords, structured data
+- [ ] **CHECK ALL LINKS** - Amazon affiliates, internal review links, category returns
+- [ ] **VALIDATE HTML** - Proper closing tags, CSS class consistency
+- [ ] **TEST RESPONSIVENESS** - Mobile/desktop layout verification
+
+### Sitemap.xml Update Format:
+```xml
+<!-- Category Review Pages -->
+<url>
+  <loc>https://topfiv3.com/reviews/[category]/[page-name]-2025.html</loc>
+  <lastmod>2025-09-02</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<!-- Individual Product Review Pages -->
+<url>
+  <loc>https://topfiv3.com/reviews/[category]/products/[product-review].html</loc>
+  <lastmod>2025-09-02</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+```
+
+### SEO Optimization Checklist:
+- [ ] Title includes year (2025) and "TopFiv3"
+- [ ] Meta description under 160 characters with key benefits
+- [ ] Keywords include product names, category terms, year
+- [ ] Structured data (JSON-LD) for breadcrumbs and item lists
+- [ ] Alt attributes on all images
+- [ ] Heading hierarchy (H1 → H2 → H3)
+
+**⚠️ NO PUSHING TO GITHUB WITHOUT SITEMAP UPDATE AND SEO VERIFICATION**
 
 This blueprint ensures 100% consistency with established TopFiv3 page formats and prevents the formatting errors encountered previously.
