@@ -393,12 +393,15 @@
 - [ ] Proper SEO meta tags and structured data
 - [ ] Consistent CSS classes and styling
 - [ ] All affiliate disclosures included
+- [ ] **ADD TEASER TO MAIN CATEGORY PAGE** (e.g., tech-electronics.html, diy-tools.html)
+- [ ] If unsure which main category page, ASK FOR CLARIFICATION before proceeding
 
 ---
 
 ## POST-CREATION REQUIREMENTS (BEFORE PUSHING TO GITHUB)
 
 ### MANDATORY Final Steps:
+- [ ] **ADD TEASER TO MAIN CATEGORY PAGE** - Replace "Coming Soon" or add new teaser block
 - [ ] **UPDATE SITEMAP.XML** - Add ALL new pages with current date
 - [ ] **VERIFY SEO OPTIMIZATION** - Meta descriptions, keywords, structured data
 - [ ] **CHECK ALL LINKS** - Amazon affiliates, internal review links, category returns
