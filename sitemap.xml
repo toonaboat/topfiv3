@@ -65,6 +65,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/smart-home-devices-2025.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
   <!-- Tech Product Review Pages -->
   <url>
@@ -94,6 +100,36 @@
   <url>
     <loc>https://topfiv3.com/reviews/tech/products/anker-soundcore-space-one-review.html</loc>
     <lastmod>2025-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/amazon-echo-show-8-3rd-gen-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/google-nest-thermostat-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/philips-hue-smart-light-bulbs-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/google-nest-cam-battery-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/tp-link-kasa-smart-wifi-plug-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
