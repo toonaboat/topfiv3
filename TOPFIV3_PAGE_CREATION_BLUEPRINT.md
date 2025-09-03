@@ -47,6 +47,9 @@
 <meta name="description" content="We tested 2025's best cordless drill and impact driver combo kits for power, battery life, and value. See our ranked Top 5 and the 3 combos that are truly worth your money.">
 <meta name="keywords" content="best cordless drill combo 2025, DEWALT combo kit, Milwaukee FUEL combo, drill impact driver combo, cordless tool reviews, brushless drill combo">
 
+<!-- Canonical URL -->
+<link rel="canonical" href="https://topfiv3.com/reviews/diy/cordless-drill-impact-combos-2025.html">
+
 <!-- Breadcrumbs (SEO) -->
 <script type="application/ld+json">
 {
@@ -202,6 +205,9 @@
     <title>ASUS RTX 5070 Smart Buy Review 2025 - Below MSRP Graphics Card Deal | TopFiv3</title>
     <meta name="description" content="ASUS Prime RTX 5070 12GB GDDR7 review at $523.79 - below MSRP pricing with DLSS 4, Blackwell architecture, and SFF-Ready design. Exceptional value buy.">
     <meta name="keywords" content="ASUS RTX 5070 review, RTX 5070 below MSRP, graphics card deal, DLSS 4, Blackwell architecture, SFF-Ready GPU, value graphics card 2025">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://topfiv3.com/reviews/misc/asus-rtx-5070-smart-buy-review.html">
 </head>
 <body>
 
@@ -431,6 +437,7 @@
 - [ ] Title includes year (2025) and "TopFiv3"
 - [ ] Meta description under 160 characters with key benefits
 - [ ] Keywords include product names, category terms, year
+- [ ] **CANONICAL TAG REQUIRED** - Add `<link rel="canonical" href="https://topfiv3.com/[page-path]">` after keywords
 - [ ] Structured data (JSON-LD) for breadcrumbs and item lists
 - [ ] Alt attributes on all images
 - [ ] Heading hierarchy (H1 → H2 → H3)
