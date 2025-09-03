@@ -261,5 +261,46 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Gaming Peripherals Ranking Pages -->
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/gaming-peripherals-2025.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Gaming Peripherals Product Review Pages -->
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/logitech-g-pro-x-tkl-lightspeed-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/razer-deathadder-v3-hyperspeed-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/steelseries-arctis-nova-pro-wireless-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/corsair-k65-plus-wireless-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://topfiv3.com/reviews/tech/products/razer-wolverine-v2-chroma-review.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <!-- Updated for GitHub Pages MIME type fix -->
 </urlset>
